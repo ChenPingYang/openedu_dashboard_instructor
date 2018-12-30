@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&course=F21 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta http-equiv="Content-Type" content="text/html;">
+<link rel="shortcut icon" href="http://localhost:8026/dashboard4s/img/favicon.png">
+<title>中華開放教育平台</title>
+
+
+
+<!-- Bootstrap Core CSS -->
+<link href="./中華開放教育平台_files/bootstrap.min.css" rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+<link href="./中華開放教育平台_files/metisMenu.min.css" rel="stylesheet">
+
+<!-- DataTables CSS -->
+<link href="./中華開放教育平台_files/dataTables.bootstrap.css" rel="stylesheet">
+
+<!-- DataTables Responsive CSS -->
+<link href="./中華開放教育平台_files/dataTables.responsive.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="./中華開放教育平台_files/sb-admin-2.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="./中華開放教育平台_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="./中華開放教育平台_files/export.css" type="text/css" media="all">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNInG: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+#chartdiv1 {
+	width: 100%;
+	height: 300px;
+}
+</style><style>
+.box {
+	width: 30%;
+	float: left;
+}
+
+.zone {
+	width: 100%;
+	height: 100%;
+}
+</style><style>
+#chartdivdonut {
+	width: 100%;
+	height: 200px;
+}
+</style><style>
+#chartdiv29 {
+	width: 100%;
+	height: 600px;
+}
+</style><style>
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+</style><style type="text/css">
+.resize {
+	width: auto;
+	width: 200px;
+}
+
+.resize {
+	height: auto;
+	height: 200px;
+}
+</style><script type="text/javascript" charset="UTF-8" src="./中華開放教育平台_files/loader.js.下載"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./中華開放教育平台_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./中華開放教育平台_files/util.css"><script type="text/javascript" charset="UTF-8" src="./中華開放教育平台_files/jsapi_compiled_format_module.js.下載"></script><script type="text/javascript" charset="UTF-8" src="./中華開放教育平台_files/jsapi_compiled_default_module.js.下載"></script><script type="text/javascript" charset="UTF-8" src="./中華開放教育平台_files/jsapi_compiled_ui_module.js.下載"></script><script type="text/javascript" charset="UTF-8" src="./中華開放教育平台_files/jsapi_compiled_corechart_module.js.下載"></script><link id="load-css-2" rel="stylesheet" type="text/css" href="./中華開放教育平台_files/table.css"><link id="load-css-3" rel="stylesheet" type="text/css" href="./中華開放教育平台_files/format.css"><script type="text/javascript" charset="UTF-8" src="./中華開放教育平台_files/jsapi_compiled_table_module.js.下載"></script><script type="text/javascript" src="./中華開放教育平台_files/fabric.min.js.下載" async=""></script><script type="text/javascript" src="./中華開放教育平台_files/FileSaver.min.js.下載" async=""></script><script type="text/javascript" src="./中華開放教育平台_files/jszip.min.js.下載" async=""></script><script type="text/javascript" src="./中華開放教育平台_files/pdfmake.min.js.下載" async=""></script><script type="text/javascript" src="./中華開放教育平台_files/xlsx.min.js.下載" async=""></script><script type="text/javascript" src="./中華開放教育平台_files/vfs_fonts.js.下載" async=""></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body onresize="onresizeSidebar()">
+	<div id="wrapper">
+
+		<!-- Navigation -->
+		
+
+
+
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap Core CSS -->
+<link href="./中華開放教育平台_files/bootstrap.min.css" rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+<link href="./中華開放教育平台_files/metisMenu.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="./中華開放教育平台_files/sb-admin-2.css" rel="stylesheet">
+
+<!-- Morris Charts CSS -->
+<link href="./中華開放教育平台_files/morris.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="./中華開放教育平台_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+.navbar-center {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar-collapse-center {
+	text-align: center;
+}
+</style>
+
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+		<div class="container">
+			<div class="navbar-header" style="height: 55px">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="sidebarBlock()" aria-expanded="false" aria-controls="navbar" style="float: left; margin-left: 15px; background-color: #b4daf7;">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a href="http://localhost:8026/dashboard4s/index"><img src="./中華開放教育平台_files/OpenEdu_Logo_W.png" style="max-height: 50px; margin-top: 5px;"></a>
+
+			</div>
+			<div id="navbar" class="navbar-collapse navbar-collapse-center">
+				<ul class="nav navbar-nav navbar-center">
+					<li><a><font style="size: 30px">學生面板</font></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					
+						<li id="register-item"><a><font color="blue"><span style="font-weight: bold;">Welcome , 趙柏維</span></font></a></li>
+					
+					
+					<li id="my-course-list" class="dropdown" style="display: none"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的課程<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a target="_self">課程列表</a></li>
+							<li><a target="_blank">問卷調查</a></li>
+							<li><a target="_blank">課程證書</a></li>
+							<li><a target="_self">登出</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!-- /.navbar-top-links -->
+
+		<div class="navbar-default sidebar" role="navigation" id="side_menu" style="display: block;">
+			<div class="sidebar-nav navbar-collapse in" aria-expanded="true">
+				<ul class="nav" id="side-menu">
+					<li><a href="http://localhost:8026/dashboard4s/index"><i class="fa fa-dashboard fa-fw"></i>
+							總覽</a></li>
+					<li><a href="http://localhost:8026/dashboard4s/BasicCourseDataServlet"><i class="fa fa-dashboard fa-fw"></i>
+							個人選課資料</a></li>
+					<li><a href="http://localhost:8026/dashboard4s/glossary.jsp"><i class="fa fa-edit fa-fw"></i>
+							名詞解釋</a></li>
+
+				</ul>
+			</div>
+			<!-- /.sidebar-collapse -->
+		</div>
+		<!-- /.navbar-static-side -->
+	</nav>
+	<script type="text/javascript">
+		function onresizeSidebar() {
+			if (document.body.clientWidth < 768) {
+				side_menu.style.display = 'none';
+			} else {
+				side_menu.style.display = 'block';
+			}
+			// 			alert("5121");
+		}
+		var i = 0;
+		function sidebarBlock() {
+			if (side_menu.style.display == 'none')
+				side_menu.style.display = 'block';
+			else
+				side_menu.style.display = 'none';
+		}
+	</script>
+
+
+
+		<div id="page-wrapper" style="min-height: 602px;">
+			<div class="row">
+				<div class="col-md-10">
+					<h1 class="page-header">軟體設計樣式</h1>
+
+				</div>
+
+			</div>
+			
+			<div id="images" style="width: 160px; height: 160px"><img src="./中華開放教育平台_files/375.jpg"></div>
+
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="panel panel-default">
+						<div class="panel-heading">修課資料</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<table style="width: 100%" class="table table-hover">
+								<thead>
+									<tr>
+										<th width="30%">觀看次數</th>
+										<th width="30%">觀看影片數</th>
+										<th width="30%">討論區發文數</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a data-toggle="modal" data-target="#myModalwatch" style="cursor: pointer">0.0</a></td>
+										<td><a data-toggle="modal" data-target="#myModalvideo" style="cursor: pointer">0.0</a></td>
+										<td><a data-toggle="modal" data-target="#myModalforum" style="cursor: pointer">0.0</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<table style="width: 100%" class="table table-hover">
+								<thead>
+									<tr>
+
+										<th width="30%">問答題完成率</th>
+										<th width="30%">問答題答對率</th>
+										<th width="30%">題目成績</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+
+										<td><a data-toggle="modal" data-target="#myModalcomplete" style="cursor: pointer">0.0</a></td>
+										<td><a data-toggle="modal" data-target="#myModalc_complete" style="cursor: pointer">0.0</a></td>
+										<td><a data-toggle="modal" data-target="#myModalgrade" style="cursor: pointer">0</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<font color="blue" size="3"><span style="font-weight: bold;">目前完成 0.0 單元
+									</span></font>
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<div id="chartdivdonut" style="overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 353px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 353px; height: 200px; top: -0.381927px; left: -0.09375px;"><desc>JavaScript chart by amCharts 3.21.6</desc><g><path cs="100,100" d="M0.5,0.5 L352.5,0.5 L352.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g opacity="1" aria-label="未完成: 100.00% 100 " visibility="visible" transform="translate(0,0)"><path cs="1000,1000" d=" M176.5,50 L176.5,16 A84,84,0,1,1,176.4120354217768,16.000046058149664 L176.44764013201,50.00002741556527 A50,50,0,1,0,176.5,50 Z" fill="#fdd400" stroke="#FFFFFF" stroke-width="2" stroke-opacity="1" fill-opacity="1"></path><path cs="100,100" d="M177.5,184.5 L177.5,189.5 L169.5,189.5" fill="none" stroke-opacity="0.3" stroke="#000000" visibility="visible"></path></g></g><g></g><g><g visibility="visible" transform="translate(0,0)" opacity="1"><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(165,189)" style="cursor: default;" visibility="visible"><tspan y="6" x="0">未完成</tspan></text></g></g><g></g><g></g><g></g><g><g></g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/javascript-charts/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;">JS chart by amCharts</a></div></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">修課雷達圖</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-5">
+									<div id="chartdiv1" style="overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 476px; height: 300px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 476px; height: 300px; top: 0.475708px; left: -0.020813px;"><g><path cs="100,100" d="M0.5,0.5 L475.5,0.5 L475.5,299.5 L0.5,299.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g><g transform="translate(238,150)" visibility="visible"><path cs="100,100" d="M0.5,0.5 L0.5,-104.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="middle" transform="translate(0,-130)"><tspan y="6" x="0">觀看次數(%)</tspan></text><path cs="100,100" d="M0.5,0.5 L100.5,-31.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(124,-39)"><tspan y="6" x="0">觀看影片數(%)</tspan></text><path cs="100,100" d="M0.5,0.5 L62.5,85.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(78,101)"><tspan y="6" x="0">討論區發文數(%)</tspan></text><path cs="100,100" d="M0.5,0.5 L-61.5,85.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-78,101)"><tspan y="6" x="0">問答題完成率(%)</tspan></text><path cs="100,100" d="M0.5,0.5 L-99.5,-31.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-124,-39)"><tspan y="6" x="0">問答題答對率(%)</tspan></text></g><g transform="translate(238,150)" visibility="hidden"><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="middle" transform="translate(0,-130)"><tspan y="6" x="0">觀看次數(%)</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(124,-39)"><tspan y="6" x="0">觀看影片數(%)</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(78,101)"><tspan y="6" x="0">討論區發文數(%)</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-78,101)"><tspan y="6" x="0">問答題完成率(%)</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-124,-39)"><tspan y="6" x="0">問答題答對率(%)</tspan></text></g></g><g><g transform="translate(238,150)" visibility="visible"><g><path cs="100,100" d="M0.5,0.5 L-4.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><path cs="100,100" d="M0.5,0.5 L0.5,0.5 L0.5,0.5 L0.5,0.5 L0.5,0.5 L0.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,-20.5 L-4.5,-20.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><path cs="100,100" d="M0.5,-20.5 L20.5,-5.5 L12.5,17.5 L-11.5,17.5 L-19.5,-5.5 L0.5,-20.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,-41.5 L-4.5,-41.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><path cs="100,100" d="M0.5,-41.5 L40.5,-12.5 L25.5,34.5 L-24.5,34.5 L-39.5,-12.5 L0.5,-41.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,-62.5 L-4.5,-62.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><path cs="100,100" d="M0.5,-62.5 L60.5,-18.5 L37.5,51.5 L-36.5,51.5 L-59.5,-18.5 L0.5,-62.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,-83.5 L-4.5,-83.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><path cs="100,100" d="M0.5,-83.5 L80.5,-25.5 L49.5,68.5 L-48.5,68.5 L-79.5,-25.5 L0.5,-83.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,-104.5 L-4.5,-104.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path><path cs="100,100" d="M0.5,-104.5 L100.5,-31.5 L62.5,85.5 L-61.5,85.5 L-99.5,-31.5 L0.5,-104.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g></g><g transform="translate(238,150)" visibility="hidden"></g></g><desc>JavaScript chart by amCharts 3.21.6</desc><g></g><g></g><g></g><g></g><g><g transform="translate(238,150)" opacity="1" visibility="visible"><g></g><g><path cs="100,100" d="M0.5,-22.08065 L23.10011,-6.84322 L0.92466,1.0845 L-4.92571,7.96785 L-7.32153,-2.04137 L0.5,-22.08065 M0,0 L0,0" fill="none" stroke-width="1" stroke-opacity="0.9" stroke="#67b7dc" stroke-linejoin="round"></path><path cs="100,100" d="M0.5,-22.08065 L23.10011,-6.84322 L0.92466,1.0845 L-4.92571,7.96785 L-7.32153,-2.04137 L0.5,-22.08065 L0.5,0.5 Z" fill="#67b7dc" stroke="#000" fill-opacity="0.3" stroke-width="1" stroke-opacity="0"></path></g><g></g></g><g transform="translate(238,150)" opacity="1" visibility="visible"><g></g><g><path cs="100,100" d="M0.5,-104.5 L0.5,0.5 L62.21745,85.44678 L-61.21745,85.44678 L0.5,0.5 L0.5,-104.5 M0,0 L0,0" fill="none" stroke-width="1" stroke-opacity="0.9" stroke="#fdd400" stroke-linejoin="round"></path><path cs="100,100" d="M0.5,-104.5 L0.5,0.5 L62.21745,85.44678 L-61.21745,85.44678 L0.5,0.5 L0.5,-104.5 L0.5,0.5 Z" fill="#fdd400" stroke="#000" fill-opacity="0.3" stroke-width="1" stroke-opacity="0"></path></g><g></g></g></g><g></g><g></g><g></g><g><g transform="translate(238,150)" opacity="1" visibility="visible"><circle r="2" cx="0" cy="0" fill="#67b7dc" stroke="#67b7dc" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(0,-23)" aria-label=" 觀看次數(%) 21.50537634408602"></circle><circle r="2" cx="0" cy="0" fill="#67b7dc" stroke="#67b7dc" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(23,-7)" aria-label=" 觀看影片數(%) 22.63157894736842"></circle><circle r="2" cx="0" cy="0" fill="#67b7dc" stroke="#67b7dc" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(0,1)" aria-label=" 討論區發文數(%) 0.6880733944954129"></circle><circle r="2" cx="0" cy="0" fill="#67b7dc" stroke="#67b7dc" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(-5,7)" aria-label=" 問答題完成率(%) 8.791208791208788"></circle><circle r="2" cx="0" cy="0" fill="#67b7dc" stroke="#67b7dc" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(-8,-3)" aria-label=" 問答題答對率(%) 7.832422586520946"></circle></g><g transform="translate(238,150)" opacity="1" visibility="visible"><path cs="100,100" d="M-1.5,2.5 L2.5,2.5 L2.5,-1.5 L-1.5,-1.5 Z" fill="#fdd400" stroke="#fdd400" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(0,-105)" aria-label=" 觀看次數(%) 100"></path><path cs="100,100" d="M-1.5,2.5 L2.5,2.5 L2.5,-1.5 L-1.5,-1.5 Z" fill="#fdd400" stroke="#fdd400" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(0,0)" aria-label=" 觀看影片數(%) 0"></path><path cs="100,100" d="M-1.5,2.5 L2.5,2.5 L2.5,-1.5 L-1.5,-1.5 Z" fill="#fdd400" stroke="#fdd400" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(62,85)" aria-label=" 討論區發文數(%) 100"></path><path cs="100,100" d="M-1.5,2.5 L2.5,2.5 L2.5,-1.5 L-1.5,-1.5 Z" fill="#fdd400" stroke="#fdd400" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(-62,85)" aria-label=" 問答題完成率(%) 100"></path><path cs="100,100" d="M-1.5,2.5 L2.5,2.5 L2.5,-1.5 L-1.5,-1.5 Z" fill="#fdd400" stroke="#fdd400" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(0,0)" aria-label=" 問答題答對率(%) 0"></path></g></g><g><g></g></g><g><g transform="translate(238,150)" visibility="visible"><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-8,0)"><tspan y="6" x="0">0</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-8,-21)"><tspan y="6" x="0">20</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-8,-42)"><tspan y="6" x="0">40</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-8,-63)"><tspan y="6" x="0">60</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-8,-84)"><tspan y="6" x="0">80</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-8,-105)"><tspan y="6" x="0">100</tspan></text></g><g transform="translate(238,150)" visibility="hidden"></g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/javascript-charts/" title="JavaScript charts" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;">JS chart by amCharts</a></div></div></div>
+								</div>
+								<div class="col-lg-7">
+									<table style="width: 100%" class="table table-hover">
+										<thead>
+											<tr>
+												<th>資料名</th>
+												<th>學生最高</th>
+												<th>平均學生真實數值</th>
+												<th>本課程個人真實數值</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+												<tr>
+													<td>觀看次數</td>
+													<td>29</td>
+													<td>0.65(21.51%)</td>
+													<td>20(100%)</td>
+												</tr>
+											
+												<tr>
+													<td>觀看影片數</td>
+													<td>21</td>
+													<td>0.68(22.63%)</td>
+													<td>0(0%)</td>
+												</tr>
+											
+												<tr>
+													<td>討論區發文數</td>
+													<td>2</td>
+													<td>0.01(0.69%)</td>
+													<td>16(100%)</td>
+												</tr>
+											
+												<tr>
+													<td>問答題完成率</td>
+													<td>1</td>
+													<td>0.01(8.79%)</td>
+													<td>1(100%)</td>
+												</tr>
+											
+												<tr>
+													<td>問答題答對率</td>
+													<td>1.23</td>
+													<td>0.01(7.83%)</td>
+													<td>0(0%)</td>
+												</tr>
+											
+										</tbody>
+									</table>
+									<label>去極端值做法採用 Hampel identifier，平均資料是使用去極端值後產生出來的</label>
+								</div>
+							</div>
+						</div>
+						<!-- 						<div class="panel-body"> -->
+						<!-- 							<div id="chartdiv1"></div> -->
+						<!-- 							/.table-responsive -->
+						<!-- 						</div> -->
+						<!-- /.panel-body -->
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">修課折線圖</div>
+						<div class="row">
+							<div class="panel-body">
+								<div id="Div1"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 1216px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="1216" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="defs"><clippath id="_ABSTRACT_RENDERER_ID_1"><rect x="119" y="38" width="979" height="124"></rect></clippath></defs><rect x="0" y="0" width="1216" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="1112" y="38" width="90" height="32" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="1112" y="38" width="90" height="32" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="1145" y="49.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">個人表現</text><text text-anchor="start" x="1145" y="67.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">(%)</text></g><rect x="1112" y="45" width="28" height="7" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#3366cc"></rect><path d="M1112,45L1140,45" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g><rect x="119" y="38" width="979" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#_ABSTRACT_RENDERER_ID_1)"><g><rect x="119" y="161" width="979" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="130" width="979" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="100" width="979" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="69" width="979" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="38" width="979" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><g><path d="M119.5,161.5L119.5,161.5L119.5,38.5L364,161.5L608.5,38.5L853,38.5L1097.5,161.5L1097.5,161.5Z" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#3366cc"></path></g></g><g><rect x="119" y="161" width="979" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g><g><path d="M119.5,38.5L364,161.5L608.5,38.5L853,38.5L1097.5,161.5" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="middle" x="119.5" y="182.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">觀看次數(%)</text></g><g><text text-anchor="middle" x="364" y="182.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">觀看影片數(%)</text></g><g><text text-anchor="middle" x="608.5" y="182.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">討論區發文數(%)</text></g><g><text text-anchor="middle" x="853" y="182.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">問答題完成率(%)</text></g><g><text text-anchor="middle" x="1097.5" y="182.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">問答題答對率(%)</text></g><g><text text-anchor="end" x="105" y="166.4" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="105" y="135.65" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#444444">25</text></g><g><text text-anchor="end" x="105" y="104.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#444444">50</text></g><g><text text-anchor="end" x="105" y="74.15" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#444444">75</text></g><g><text text-anchor="end" x="105" y="43.4" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#444444">100</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>week</th><th>個人表現(%)</th></tr></thead><tbody><tr><td>觀看次數(%)</td><td>100</td></tr><tr><td>觀看影片數(%)</td><td>0</td></tr><tr><td>討論區發文數(%)</td><td>100</td></tr><tr><td>問答題完成率(%)</td><td>100</td></tr><tr><td>問答題答對率(%)</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 1226px; white-space: nowrap; font-family: Arial; font-size: 14px;">(%)</div><div></div></div></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 			<div class="row"> -->
+			<!-- 				<div class="col-lg-12"> -->
+			<!-- 					<div class="panel panel-primary"> -->
+			<!-- 						<div class="panel-heading">修課雷達圖</div> -->
+			<!-- 						/.panel-heading -->
+			<!-- 						<div class="panel-body"> -->
+			<!-- 							<div class="row"> -->
+			<!-- 								<div class="col-lg-5"> -->
+			<!-- 									<div id="chart-area"></div> -->
+			<!-- 								</div> -->
+			<!-- 							</div> -->
+			<!-- 						</div> -->
+			<!-- 						<div class="panel-body"> -->
+			<!-- 							<div id="chart-area"></div> -->
+			<!-- 							/.table-responsive -->
+			<!-- 						</div> -->
+			<!-- 						/.panel-body -->
+			<!-- 					</div> -->
+			<!-- 				</div> -->
+
+			<!-- 			</div> -->
+
+			<!-- 			<div class="col-lg-5"> -->
+			<!-- 				<div class="panel panel-primary"> -->
+			
+			<!-- 				</div> -->
+			<!-- 			</div> -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								已觀看的課程 <i data-toggle="tooltip" data-placement="top" title="" data-track-event="edx.bi.tooltip.displayed" class="ico ico-tooltip fa fa-info-circle has-tooltip" data-original-title="影片問答題答對率(答對數/總題數)超過50%的人數與比例"></i>
+							</h3>
+						</div>
+						<div id="table_div" style="width: 95%; height: 100%;"><div class="google-visualization-table" style="position: relative; z-index: 0; max-width: 100%; max-height: 100%; width: 100%; height: 100%;"><div style="position: relative; overflow: auto; max-width: 100%; max-height: 100%; width: 100%;"><table class="google-visualization-table-table" cellspacing="0" style="width: 100%; height: 100%;"><thead><tr class="cssHeaderRow"><th class="cssHeaderCell unsorted">&nbsp;</th><th class="cssHeaderCell unsorted" tabindex="0" role="button" aria-label="Sort column">課程名稱<span class="google-visualization-table-sortind"></span></th></tr></thead><tbody><tr class="cssTableRow"><td class="cssTableCell cssRowNumberCell">1</td><td class="cssTableCell">尚無觀看影片</td></tr></tbody></table></div><div class="google-visualization-table-div-page gradient"><div class="goog-inline-block goog-custom-button goog-custom-button-disabled goog-custom-button-collapse-right" role="button" aria-disabled="true" style="user-select: none;"><div class="goog-inline-block goog-custom-button-outer-box"><div class="goog-inline-block goog-custom-button-inner-box"><span class="google-visualization-table-page-prev"></span></div></div></div><div class="goog-inline-block goog-custom-button goog-custom-button-disabled goog-custom-button-collapse-left" role="button" aria-disabled="true" style="user-select: none;"><div class="goog-inline-block goog-custom-button-outer-box"><div class="goog-inline-block goog-custom-button-inner-box"><span class="google-visualization-table-page-next"></span></div></div></div></div><div style="clear: both; width: 100%; height: 0px;"></div></div></div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">課程勳章</div>
+						<!-- body -->
+						<div class="panel-body" style="background-image: url(&#39;img/medalBackground.jpg&#39;); width: 100%; height: 100%; border: 1px #ccc solid;">
+
+							<!-- 2017.11.8_新增&修改(始) -->
+							<!-- 登入次數 -->
+							<div class="row">
+								<div class="col-lg-2" style="padding-left: 35px">
+									<div id="login1" data-trigger="hover" data-placement="bottom" data-original-title="登入一次" data-html="true" data-content="已獲得">
+										<!-- data-html="true" 用<br>即可換行 -->
+										<img src="./中華開放教育平台_files/login_1.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+								<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+									<div id="login2" data-trigger="hover" data-placement="bottom" data-original-title="登入五次" data-html="true" data-content="已獲得">
+										<img src="./中華開放教育平台_files/login_5.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+								<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+									<div id="login3" data-trigger="hover" data-placement="bottom" data-original-title="登入十次" data-html="true" data-content="已獲得">
+										<img src="./中華開放教育平台_files/login_10.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+								<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+									<div id="login4" data-trigger="hover" data-placement="bottom" data-original-title="登入二十次" data-html="true" data-content="已獲得">
+										<img src="./中華開放教育平台_files/login_20.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+							</div>
+
+							<!-- 影片觀看次數 -->
+							
+								<div class="row">
+									<div class="col-lg-2" style="padding-left: 35px">
+										<div id="watch1" data-trigger="hover" data-placement="bottom" data-original-title="影片觀看一次" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/watch_1.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+									<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+										<div id="watch2" data-trigger="hover" data-placement="bottom" data-original-title="影片觀看20%" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/watch_20_Percentage.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+									<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+										<div id="watch3" data-trigger="hover" data-placement="bottom" data-original-title="影片觀看50%" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/watch_50_Percentage.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+									<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+										<div id="watch4" data-trigger="hover" data-placement="bottom" data-original-title="影片觀看100%" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/watch_100_Percentage.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+								</div>
+							
+
+							<!-- 討論次數 -->
+							<div class="row">
+								<div class="col-lg-2" style="padding-left: 35px">
+									<div id="forum1" data-trigger="hover" data-placement="bottom" data-original-title="討論一次" data-html="true" data-content="已獲得">
+										<!-- data-html="true" 用<br>即可換行 -->
+										<img src="./中華開放教育平台_files/forum_1.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+								<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+									<div id="forum2" data-trigger="hover" data-placement="bottom" data-original-title="討論三次" data-html="true" data-content="已獲得">
+										<img src="./中華開放教育平台_files/forum_3.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+								<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+									<div id="forum3" data-trigger="hover" data-placement="bottom" data-original-title="討論八次" data-html="true" data-content="已獲得">
+										<img src="./中華開放教育平台_files/forum_8.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+								<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+									<div id="forum4" data-trigger="hover" data-placement="bottom" data-original-title="討論十五次" data-html="true" data-content="已獲得">
+										<img src="./中華開放教育平台_files/forum_15.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+									</div>
+									<!-- 進度條 -->
+									<div class="progress  progress-striped active">
+										<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+									</div>
+									<!--  -->
+								</div>
+							</div>
+
+							<!-- 練習題作答次數 -->
+							
+								<div class="row">
+									<div class="col-lg-2" style="padding-left: 35px">
+										<div id="answer1" data-trigger="hover" data-placement="bottom" data-original-title="練習題作答一次" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/answer_1.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+									<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+										<div id="answer2" data-trigger="hover" data-placement="bottom" data-original-title="練習題作答20%" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/answer_20_Percentage.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+									<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+										<div id="answer3" data-trigger="hover" data-placement="bottom" data-original-title="練習題作答50%" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/answer_50_Percentage.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+									<div class="col-lg-2 col-lg-offset-1" style="padding-left: 35px">
+										<div id="answer4" data-trigger="hover" data-placement="bottom" data-original-title="練習題作答100%" data-html="true" data-content="已獲得">
+											<img src="./中華開放教育平台_files/answer_100_Percentage.png" style="width: 120px; height: 120px; text-align: right; font-size: 2em;">
+										</div>
+										<!-- 進度條 -->
+										<div class="progress  progress-striped active">
+											<div class="progress-bar progress-bar-info" style="width: 100%; color: black">100%</div>
+										</div>
+										<!--  -->
+									</div>
+								</div>
+							
+							<!-- 2017.11.8_新增&修改(末) -->
+						</div>
+						<!-- body -->
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">選了這門課的學生也選了</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<!-- 							<div id="images"></div> -->
+							<table width="100%" class="table table-striped table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>課程圖片</th>
+										<th id="images1"><img src="./中華開放教育平台_files/42.jpg"></th>
+										<th id="images2"><img src="./中華開放教育平台_files/393.jpg"></th>
+										<th id="images3"><img src="./中華開放教育平台_files/390.jpg"></th>
+										<th id="images4"><img src="./中華開放教育平台_files/276.jpg"></th>
+										<th id="images5"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr><td>課程名稱</td>
+									<td id="recommandcourseid1"><a href="https://courses.openedu.tw/courses/SP/103101002/104/info" target="_blank">C#程式設計</a></td>
+									<td id="recommandcourseid2"><a href="https://courses.openedu.tw/courses/course-v1:THUx+QA76+17001/info" target="_blank">雲端計算與服務</a></td>
+									<td id="recommandcourseid3"><a href="https://courses.openedu.tw/courses/course-v1:UOOCx+OA76+17001/info" target="_blank">多媒體技術及應用</a></td>
+									<td id="recommandcourseid4"><a href="https://courses.openedu.tw/courses/course-v1:SP+104SCI001218+105/info" target="_blank">系統程式</a></td>
+									<td id="recommandcourseid5"><a href="https://courses.openedu.tw/courses/course-v1:SP+1050025247+106/info" target="_blank"></a></td>
+								</tr></tbody>
+							</table>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+
+		<div class="modal fade" id="myModalgrade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">我的成績 :
+							0 &nbsp;&nbsp;&nbsp;&nbsp;平均 : 2.06
+							&nbsp;&nbsp;&nbsp;&nbsp;最高 : 47</h4>
+					</div>
+					<div class="modal-body" id="chartdivgrade" style="height: 400px; padding-top: 0px; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 10px; height: 10px;"><desc>JavaScript chart by amCharts 3.21.6</desc><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g transform="translate(0,35)"></g><g></g><g></g><g></g><g></g><g></g></svg></div></div></div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<div class="modal fade" id="myModalwatch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">我的成績 :
+							20.0 &nbsp;&nbsp;&nbsp;&nbsp;平均 :
+							0.65 &nbsp;&nbsp;&nbsp;&nbsp;最高 :
+							29.0</h4>
+					</div>
+					<div class="modal-body" id="chartdivwatch" style="height: 400px; padding-top: 0px; padding-left: 0px; padding-right: 0px; overflow: visible; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 10px; height: 10px;"><desc>JavaScript chart by amCharts 3.21.6</desc><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g transform="translate(0,35)"></g><g></g><g></g><g></g><g></g><g></g></svg></div><div class="amcharts-export-menu amcharts-export-menu-top-right amExportButton"><ul><li class="export-main"><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>menu.label.undefined</span></a><ul><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>Download as ...</span></a><ul><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>PNG</span></a></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>JPG</span></a></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>SVG</span></a></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>PDF</span></a></li></ul></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>Save as ...</span></a><ul><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>CSV</span></a></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>XLSX</span></a></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>JSON</span></a></li></ul></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>Annotate ...</span></a></li><li><a href="http://localhost:8026/dashboard4s/ChartDataServlet?mode=2&amp;course=F21#"><span>Print</span></a></li></ul></li></ul></div></div></div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<div class="modal fade" id="myModalvideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">我的成績 :
+							0.0 &nbsp;&nbsp;&nbsp;&nbsp;平均 :
+							0.68 &nbsp;&nbsp;&nbsp;&nbsp;最高 :
+							21.0</h4>
+					</div>
+					<div class="modal-body" id="chartdivvideo" style="height: 400px; padding-top: 0px; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 10px; height: 10px;"><desc>JavaScript chart by amCharts 3.21.6</desc><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g transform="translate(0,35)"></g><g></g><g></g><g></g><g></g><g></g></svg></div></div></div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<div class="modal fade" id="myModalforum" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">我的成績 :
+							16.0 &nbsp;&nbsp;&nbsp;&nbsp;平均 :
+							0.01 &nbsp;&nbsp;&nbsp;&nbsp;最高 :
+							2.0</h4>
+					</div>
+					<div class="modal-body" id="chartdivforum" style="height: 400px; padding-top: 0px; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 10px; height: 10px;"><desc>JavaScript chart by amCharts 3.21.6</desc><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g transform="translate(0,35)"></g><g></g><g></g><g></g><g></g><g></g></svg></div></div></div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+
+		<div class="modal fade" id="myModalcomplete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">我的成績 :
+							1.0% &nbsp;&nbsp;&nbsp;&nbsp;平均 :
+							0.01% &nbsp;&nbsp;&nbsp;&nbsp;最高 :
+							1.0%</h4>
+					</div>
+					<div class="modal-body" id="chartdivcomplete" style="height: 400px; padding-top: 0px; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 10px; height: 10px;"><desc>JavaScript chart by amCharts 3.21.6</desc><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g transform="translate(0,35)"></g><g></g><g></g><g></g><g></g><g></g></svg></div></div></div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+
+		<div class="modal fade" id="myModalc_complete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">我的成績 :
+							0.0% &nbsp;&nbsp;&nbsp;&nbsp;平均 :
+							0.01% &nbsp;&nbsp;&nbsp;&nbsp;最高 :
+							1.225%</h4>
+					</div>
+					<div class="modal-body" id="chartdivc_complete" style="height: 400px; padding-top: 0px; padding-left: 0px; padding-right: 0px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 10px; height: 10px;"><desc>JavaScript chart by amCharts 3.21.6</desc><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g transform="translate(0,35)"></g><g></g><g></g><g></g><g></g><g></g></svg></div></div></div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+
+
+		
+
+		<!-- 			<div class="row"> -->
+
+
+
+		<!-- 				/.col-lg-6 -->
+		<!-- 				<div class="col-lg-12"> -->
+		<!-- 					<div class="panel panel-primary"> -->
+		<!-- 						<div class="panel-heading"> -->
+		<!-- 							活躍度折線圖 <i data-toggle="tooltip" data-placement="top" title="" -->
+		<!-- 								data-track-event="edx.bi.tooltip.displayed" -->
+		<!-- 								class="ico ico-tooltip fa fa-info-circle has-tooltip" -->
+		<!-- 								data-original-title="活躍學生(學習者最後登入的時間在課程期間的一半之後 -->
+		<!-- 							)與非活躍學生(學習者最後登入的時間在課程期間的一半之前 -->
+		<!-- 							)折線圖"></i> -->
+		<!-- 						</div> -->
+		<!-- 						/.panel-heading -->
+		<!-- 						<div class="panel-body"> -->
+		<!-- 							<div id="curve_chart" style="width: 100%; height: 100%;"></div> -->
+		<!-- 							/.table-responsive -->
+		<!-- 						</div> -->
+		<!-- 						/.panel-body -->
+		<!-- 					</div> -->
+		<!-- 					/.panel -->
+		<!-- 				</div> -->
+
+
+		<!-- 			</div> -->
+		<!-- 			<div class="row"> -->
+
+
+
+		<!-- 				/.col-lg-6 -->
+		<!-- 				<div class="col-lg-12"> -->
+		<!-- 					<div class="panel panel-primary"> -->
+		<!-- 						<div class="panel-heading"> -->
+		<!-- 							練習題作答率折線圖 <i data-toggle="tooltip" data-placement="top" title="" -->
+		<!-- 								data-track-event="edx.bi.tooltip.displayed" -->
+		<!-- 								class="ico ico-tooltip fa fa-info-circle has-tooltip" -->
+		<!-- 								data-original-title="作答率=學習者作答題數/總題數"></i> -->
+
+		<!-- 						</div> -->
+
+
+		<!-- 						/.panel-heading -->
+		<!-- 						<div class="panel-body"> -->
+		<!-- 							<div id="answer_chart" style="width: 100%; height: 100%;"></div> -->
+		<!-- 							/.table-responsive -->
+		<!-- 						</div> -->
+		<!-- 						/.panel-body -->
+		<!-- 					</div> -->
+		<!-- 					/.panel -->
+		<!-- 				</div> -->
+
+
+		<!-- 			</div> -->
+
+
+		<!-- 		</div> -->
+		<!-- /#page-wrapper -->
+
+
+	</div>
+	<!-- /#wrapper -->
+
+
+	<script src="./中華開放教育平台_files/Chart.min.js.下載"></script>
+
+	<script src="./中華開放教育平台_files/amcharts.js.下載"></script>
+
+	<script src="./中華開放教育平台_files/serial.js.下載"></script>
+
+	<script src="./中華開放教育平台_files/radar.js.下載"></script>
+	<script src="./中華開放教育平台_files/pie.js.下載"></script>
+
+	<script src="./中華開放教育平台_files/export.min.js.下載"></script>
+	<script src="./中華開放教育平台_files/light.js.下載"></script>
+	<!-- jQuery -->
+	<script src="./中華開放教育平台_files/jquery.min.js.下載"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="./中華開放教育平台_files/bootstrap.min.js.下載"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="./中華開放教育平台_files/metisMenu.min.js.下載"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="./中華開放教育平台_files/sb-admin-2.js.下載"></script>
+	<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+
+	<!-- google chart JavaScript -->
+	<script type="text/javascript" src="./中華開放教育平台_files/loader.js(1).下載"></script>
+
+	<script type="text/javascript" src="./中華開放教育平台_files/jquery.js.下載"></script>
+
+	<!-- 2017.11.8_新增&修改(末) -->
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+        	$.getJSON("data/openeduAPI.js", function(data){
+        		$.each(data, function(i,item){
+        			if(item.courseName ==  $("h1").text() && item.startDate == $("#startDate").text()){
+	       				 $("<img/>").attr("src", item.courseImage).appendTo("#images");
+	       				$("#images").attr("width","10%");
+	       				 $("#institute").text(item.institute);
+	       				 $("#category").text(item.category);
+	       				 $("#subcategory").text(item.subcategory);
+	       				 $.each(item.instructors, function(k,teacher){
+	       					 $("#teacherlist").text($("#teacherlist").text()+" "+teacher.name);
+	       				 });
+	       				 return false;
+       				}
+        			else if(item.courseName ==  $("h1").text()/* && item.startDate == $("#startDate").text()*/){
+        				 $("<img/>").attr("src", item.courseImage).appendTo("#images");
+        				 $("#institute").text(item.institute);
+        				 $("#category").text(item.category);
+	       				 $("#subcategory").text(item.subcategory);
+        				 $.each(item.instructors, function(k,teacher){
+        					 $("#teacherlist").text($("#teacherlist").text()+" "+teacher.name);
+        				 });
+        				 return false;
+        			}
+       			});	    
+        	});
+        });
+    </script>
+
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+        	$.getJSON("data/openeduAPI.js", function(data){
+        		$.each(data, function(i,item){
+        			if(item.courseName ==  $("#recommandcourseid1").text() && item.startDate == $("#startDate").text()){
+	       				 $("<img/>").attr("src", item.courseImage).appendTo("#images1");
+	       				 return false;
+       				}
+        			else if(item.courseName ==  $("#recommandcourseid1").text()/* && item.startDate == $("#startDate").text()*/){
+        				 $("<img/>").attr("src", item.courseImage).appendTo("#images1");
+        				 return false;
+        			}
+       			});	    
+        	});
+        });
+    </script>
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+        	$.getJSON("data/openeduAPI.js", function(data){
+        		$.each(data, function(i,item){
+        			if(item.courseName ==  $("#recommandcourseid2").text() && item.startDate == $("#startDate").text()){
+	       				 $("<img/>").attr("src", item.courseImage).appendTo("#images2");
+	       				 return false;
+       				}
+        			else if(item.courseName ==  $("#recommandcourseid2").text()/* && item.startDate == $("#startDate").text()*/){
+        				 $("<img/>").attr("src", item.courseImage).appendTo("#images2");
+        				 return false;
+        			}
+       			});	    
+        	});
+        });
+    </script>
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+        	$.getJSON("data/openeduAPI.js", function(data){
+        		$.each(data, function(i,item){
+        			if(item.courseName ==  $("#recommandcourseid3").text() && item.startDate == $("#startDate").text()){
+	       				 $("<img/>").attr("src", item.courseImage).appendTo("#images3");
+	       				 return false;
+       				}
+        			else if(item.courseName ==  $("#recommandcourseid3").text()/* && item.startDate == $("#startDate").text()*/){
+        				 $("<img/>").attr("src", item.courseImage).appendTo("#images3");
+        				 return false;
+        			}
+       			});	    
+        	});
+        });
+    </script>
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+        	$.getJSON("data/openeduAPI.js", function(data){
+        		$.each(data, function(i,item){
+        			if(item.courseName ==  $("#recommandcourseid4").text() && item.startDate == $("#startDate").text()){
+	       				 $("<img/>").attr("src", item.courseImage).appendTo("#images4");
+	       				 return false;
+       				}
+        			else if(item.courseName ==  $("#recommandcourseid4").text()/* && item.startDate == $("#startDate").text()*/){
+        				 $("<img/>").attr("src", item.courseImage).appendTo("#images4");
+        				 return false;
+        			}
+       			});	    
+        	});
+        });
+    </script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+        	$.getJSON("data/openeduAPI.js", function(data){
+        		$.each(data, function(i,item){
+        			if(item.courseName ==  $("#recommandcourseid5").text() && item.startDate == $("#startDate").text()){
+	       				 $("<img/>").attr("src", item.courseImage).appendTo("#images5");
+	       				 return false;
+       				}
+        			else if(item.courseName ==  $("#recommandcourseid5").text()/* && item.startDate == $("#startDate").text()*/){
+        				 $("<img/>").attr("src", item.courseImage).appendTo("#images5");
+        				 return false;
+        			}
+       			});	    
+        	});
+        });
+    </script>
+
+	<script>
+		$(document).ready(function() {
+			$('#dataTables-example').DataTable({
+				responsive : true
+			});
+		});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('[data-toggle="tooltip"]').tooltip(); 
+	});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#login1").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#login2").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#login3").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#login4").popover();
+		});
+	</script>
+
+	<!-- 2017.11.8_新增&修改(始) -->
+	<script>
+		$(document).ready(function(){
+			$("#watch1").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#watch2").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#watch3").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#watch4").popover();
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$("#forum1").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#forum2").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#forum3").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#forum4").popover();
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$("#answer1").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#answer2").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#answer3").popover();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#answer4").popover();
+		});
+	</script>
+
+	<script>
+
+	var chart = AmCharts.makeChart( "chartdivgrade", {
+		  "type": "serial",
+		  "theme": "light",
+		  "titles": [{
+			    "text": "題目成績",
+			    "size": 15
+			  }],
+		  "dataProvider": [ {
+		    "country": "0~4",
+		    "visits": 187
+		  }, {
+		    "country": "5~9",
+		    "visits": 19
+		  }, {
+		    "country": "10~14",
+		    "visits": 3
+		  }, {
+		    "country": "15~19",
+		    "visits": 2
+		  }, {
+		    "country": "20~24",
+		    "visits": 2
+		  }, {
+		    "country": "25~29",
+		    "visits": 1
+		  }, {
+		    "country": "30~34",
+		    "visits": 0
+		  }, {
+		    "country": "35~39",
+		    "visits": 1
+		  }, {
+		    "country": "40~44",
+		    "visits": 1
+		  },{
+			    "country": "45~49",
+			    "visits": 2
+		  },{
+			    "country": "50~54",
+			    "visits": 0
+		  }],
+		  
+		  "valueAxes": [ {
+		    "gridColor": "#FFFFFF",
+		    "gridAlpha": 0.2,
+		    "dashLength": 0
+		  } ],
+		  "gridAboveGraphs": true,
+		  "startDuration": 1,
+		  "graphs": [ {
+		    "balloonText": "[[category]]: <b>[[value]]</b>",
+		    "fillAlphas": 0.8,
+		    "lineAlpha": 0.2,
+		    "type": "column",
+		    "valueField": "visits"
+		  } ],
+		  "chartCursor": {
+		    "categoryBalloonEnabled": false,
+		    "cursorAlpha": 0,
+		    "zoomable": false
+		  },
+		  "categoryField": "country",
+		  "categoryAxis": {
+		    "gridPosition": "start",
+		    "gridAlpha": 0,
+		    "tickPosition": "start",
+		    "tickLength": 20,
+		  },
+		  "export": {
+		    "enabled": false
+		  }
+
+		} );
+</script>
+
+	<script>
+
+	var chart = AmCharts.makeChart( "chartdivwatch", {
+		  "type": "serial",
+		  "theme": "light",
+		  "titles": [{
+			    "text": "觀看次數",
+			    "size": 15
+			  }],
+		  "dataProvider": [ {
+		    "country": "0~2",
+		    "visits": 164.0
+		  }, {
+		    "country": "3~5",
+		    "visits": 35.0
+		  }, {
+		    "country": "6~8",
+		    "visits": 2.0
+		  }, {
+		    "country": "9~11",
+		    "visits": 6.0
+		  }, {
+		    "country": "12~14",
+		    "visits": 3.0
+		  }, {
+		    "country": "15~17",
+		    "visits": 2.0
+		  }, {
+		    "country": "18~20",
+		    "visits": 2.0
+		  }, {
+		    "country": "21~23",
+		    "visits": 0.0
+		  }, {
+		    "country": "24~26",
+		    "visits": 2.0
+		  },{
+			    "country": "27~29",
+			    "visits": 2.0
+		  },{
+			    "country": "30~32",
+			    "visits": 0.0
+		  }],
+		  
+		  "valueAxes": [ {
+		    "gridColor": "#FFFFFF",
+		    "gridAlpha": 0.2,
+		    "dashLength": 0
+		  } ],
+		  "gridAboveGraphs": true,
+		  "startDuration": 1,
+		  "graphs": [ {
+		    "balloonText": "[[category]]: <b>[[value]]</b>",
+		    "fillAlphas": 0.8,
+		    "lineAlpha": 0.2,
+		    "type": "column",
+		    "valueField": "visits"
+		  } ],
+		  "chartCursor": {
+		    "categoryBalloonEnabled": false,
+		    "cursorAlpha": 0,
+		    "zoomable": false
+		  },
+		  "categoryField": "country",
+		  "categoryAxis": {
+		    "gridPosition": "start",
+		    "gridAlpha": 0,
+		    "tickPosition": "start",
+		    "tickLength": 20,
+		  },
+		  "export": {
+		    "enabled": true
+		  }
+
+		} );
+</script>
+
+	<script>
+
+	var chart = AmCharts.makeChart( "chartdivvideo", {
+		  "type": "serial",
+		  "theme": "light",
+		  "titles": [{
+			    "text": "觀看影片數",
+			    "size": 15
+			  }],
+		  "dataProvider": [ {
+		    "country": "0~2",
+		    "visits": 167.0
+		  }, {
+		    "country": "3~5",
+		    "visits": 35.0
+		  }, {
+		    "country": "6~8",
+		    "visits": 1.0
+		  }, {
+		    "country": "9~11",
+		    "visits": 6.0
+		  }, {
+		    "country": "12~14",
+		    "visits": 3.0
+		  }, {
+		    "country": "15~17",
+		    "visits": 0.0
+		  }, {
+		    "country": "18~20",
+		    "visits": 3.0
+		  }, {
+		    "country": "21~23",
+		    "visits": 3.0
+		  }, {
+		    "country": "24~26",
+		    "visits": 0.0
+		  },{
+			    "country": "27~29",
+			    "visits": 0.0
+		  },{
+			    "country": "30~32",
+			    "visits": 0.0
+		  }],
+		  
+		  "valueAxes": [ {
+		    "gridColor": "#FFFFFF",
+		    "gridAlpha": 0.2,
+		    "dashLength": 0
+		  } ],
+		  "gridAboveGraphs": true,
+		  "startDuration": 1,
+		  "graphs": [ {
+		    "balloonText": "[[category]]: <b>[[value]]</b>",
+		    "fillAlphas": 0.8,
+		    "lineAlpha": 0.2,
+		    "type": "column",
+		    "valueField": "visits"
+		  } ],
+		  "chartCursor": {
+		    "categoryBalloonEnabled": false,
+		    "cursorAlpha": 0,
+		    "zoomable": false
+		  },
+		  "categoryField": "country",
+		  "categoryAxis": {
+		    "gridPosition": "start",
+		    "gridAlpha": 0,
+		    "tickPosition": "start",
+		    "tickLength": 20,
+		  },
+		  "export": {
+		    "enabled": false
+		  }
+
+		} );
+</script>
+
+	<script>
+
+	var chart = AmCharts.makeChart( "chartdivforum", {
+		  "type": "serial",
+		  "theme": "light",
+		  "titles": [{
+			    "text": "討論區發文數",
+			    "size": 15
+			  }],
+		  "dataProvider": [ {
+		    "country": "0~0",
+		    "visits": 214.0
+		  }, {
+		    "country": "1~1",
+		    "visits": 3.0
+		  }, {
+		    "country": "2~2",
+		    "visits": 1.0
+		  }, {
+		    "country": "3~3",
+		    "visits": 0.0
+		  }, {
+		    "country": "4~4",
+		    "visits": 0.0
+		  }, {
+		    "country": "5~5",
+		    "visits": 0.0
+		  }, {
+		    "country": "6~6",
+		    "visits": 0.0
+		  }, {
+		    "country": "7~7",
+		    "visits": 0.0
+		  }, {
+		    "country": "8~8",
+		    "visits": 0.0
+		  },{
+			    "country": "9~9",
+			    "visits": 0.0
+		  },{
+			    "country": "10~10",
+			    "visits": 0.0
+		  }],
+		  
+		  "valueAxes": [ {
+		    "gridColor": "#FFFFFF",
+		    "gridAlpha": 0.2,
+		    "dashLength": 0
+		  } ],
+		  "gridAboveGraphs": true,
+		  "startDuration": 1,
+		  "graphs": [ {
+		    "balloonText": "[[category]]: <b>[[value]]</b>",
+		    "fillAlphas": 0.8,
+		    "lineAlpha": 0.2,
+		    "type": "column",
+		    "valueField": "visits"
+		  } ],
+		  "chartCursor": {
+		    "categoryBalloonEnabled": false,
+		    "cursorAlpha": 0,
+		    "zoomable": false
+		  },
+		  "categoryField": "country",
+		  "categoryAxis": {
+		    "gridPosition": "start",
+		    "gridAlpha": 0,
+		    "tickPosition": "start",
+		    "tickLength": 20,
+		  },
+		  "export": {
+		    "enabled": false
+		  }
+
+		} );
+</script>
+
+	<script>
+
+	var chart = AmCharts.makeChart( "chartdivcomplete", {
+		  "type": "serial",
+		  "theme": "light",
+		  "titles": [{
+			    "text": "問答題完成率",
+			    "size": 15
+			  }],
+		  "dataProvider": [ {
+		    "country": "0~10%",
+		    "visits": 182.0
+		  }, {
+		    "country": "10~20%",
+		    "visits": 19.0
+		  }, {
+		    "country": "20~30%",
+		    "visits": 4.0
+		  }, {
+		    "country": "30~40%",
+		    "visits": 2.0
+		  }, {
+		    "country": "40~50%",
+		    "visits": 1.0
+		  }, {
+		    "country": "50~60%",
+		    "visits": 3.0
+		  }, {
+		    "country": "60~70%",
+		    "visits": 2.0
+		  }, {
+		    "country": "70~80%",
+		    "visits": 0.0
+		  }, {
+		    "country": "80~90%",
+		    "visits": 0.0
+		  },{
+			    "country": "90~100%",
+			    "visits": 5.0
+		  },{
+			    "country": "100~110%",
+			    "visits": 0.0
+		  }],
+		  
+		  "valueAxes": [ {
+		    "gridColor": "#FFFFFF",
+		    "gridAlpha": 0.2,
+		    "dashLength": 0
+		  } ],
+		  "gridAboveGraphs": true,
+		  "startDuration": 1,
+		  "graphs": [ {
+		    "balloonText": "[[category]]: <b>[[value]]</b>",
+		    "fillAlphas": 0.8,
+		    "lineAlpha": 0.2,
+		    "type": "column",
+		    "valueField": "visits"
+		  } ],
+		  "chartCursor": {
+		    "categoryBalloonEnabled": false,
+		    "cursorAlpha": 0,
+		    "zoomable": false
+		  },
+		  "categoryField": "country",
+		  "categoryAxis": {
+		    "gridPosition": "start",
+		    "gridAlpha": 0,
+		    "tickPosition": "start",
+		    "tickLength": 20,
+		  },
+		  "export": {
+		    "enabled": false
+		  }
+
+		} );
+</script>
+
+	<script>
+
+	var chart = AmCharts.makeChart( "chartdivc_complete", {
+		  "type": "serial",
+		  "theme": "light",
+		  "titles": [{
+			    "text": "問答題答對率",
+			    "size": 15
+			  }],
+		  "dataProvider": [ {
+		    "country": "0~10%",
+		    "visits": 183.0
+		  }, {
+		    "country": "10~20%",
+		    "visits": 18.0
+		  }, {
+		    "country": "20~30%",
+		    "visits": 5.0
+		  }, {
+		    "country": "30~40%",
+		    "visits": 1.0
+		  }, {
+		    "country": "40~50%",
+		    "visits": 2.0
+		  }, {
+		    "country": "50~60%",
+		    "visits": 5.0
+		  }, {
+		    "country": "60~70%",
+		    "visits": 0.0
+		  }, {
+		    "country": "70~80%",
+		    "visits": 0.0
+		  }, {
+		    "country": "80~90%",
+		    "visits": 0.0
+		  },{
+			    "country": "90~100%",
+			    "visits": 4.0
+		  },{
+			    "country": "100~110%",
+			    "visits": 0.0
+		  }],
+		  
+		  "valueAxes": [ {
+		    "gridColor": "#FFFFFF",
+		    "gridAlpha": 0.2,
+		    "dashLength": 0
+		  } ],
+		  "gridAboveGraphs": true,
+		  "startDuration": 1,
+		  "graphs": [ {
+		    "balloonText": "[[category]]: <b>[[value]]</b>",
+		    "fillAlphas": 0.8,
+		    "lineAlpha": 0.2,
+		    "type": "column",
+		    "valueField": "visits"
+		  } ],
+		  "chartCursor": {
+		    "categoryBalloonEnabled": false,
+		    "cursorAlpha": 0,
+		    "zoomable": false
+		  },
+		  "categoryField": "country",
+		  "categoryAxis": {
+		    "gridPosition": "start",
+		    "gridAlpha": 0,
+		    "tickPosition": "start",
+		    "tickLength": 20,
+		  },
+		  "export": {
+		    "enabled": false
+		  }
+
+		} );
+</script>
+
+
+
+
+	<!-- googleChart javascript for ageChart -->
+	<script>
+		google.charts.load("current", {
+			packages : [ 'corechart' ]
+		});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+					[ "Element", "人數", {role : "style"} ], 
+					[ "17歲以下", , "#b87333" ],
+					[ "18歲到25歲", , "silver" ], 
+					[ "25歲以上", , "gold" ]
+					]);
+
+			var view = new google.visualization.DataView(data);
+			view.setColumns([ 0, 1, {
+				calc : "stringify",
+				sourceColumn : 1,
+				type : "string",
+				role : "annotation"
+			}, 2 ]);
+
+			var options = {
+				title : "", 
+				bar : {
+					groupWidth : "95%"
+				},
+				legend : {
+					position : "none"
+				},
+			};
+			var chart = new google.visualization.ColumnChart(document
+					.getElementById("ageChart"));
+			chart.draw(view, options);
+			window.addEventListener("resize", function(){
+		    	chart.draw(data, options);
+		    });
+		}
+	</script>
+
+	<!-- googleChart javascript for educationChart -->
+	<script>
+	google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable(
+    		  );
+
+      var options = {
+        title: '人數',
+        hAxis: {title: '日期',  titleTextStyle: {color: '#333'}},
+        vAxis: {minValue: 0}
+      };
+
+      var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+	</script>
+
+	<!--  googleChart javascript for registeredChart  -->
+	<script>
+		google.charts.load('current', {
+			'packages' : [ 'corechart' ]
+		});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+
+			var data = google.visualization.arrayToDataTable([
+					[ '註冊', '人數' ], 
+					[ '台灣', ] ,
+					[ '非台灣', ]
+					]);
+
+			var options = {
+				title : ''
+			};
+
+			var chart = new google.visualization.PieChart(document
+					.getElementById('registeredChart'));
+
+			chart.draw(data, options);
+		 	window.addEventListener("resize", function(){
+	        	chart.draw(data, options);
+	        });
+		}
+	</script>
+
+	<script>
+		google.charts.load('current', {
+			'packages' : [ 'corechart' ]
+		});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+
+			var data = google.visualization.arrayToDataTable([
+					[ '學員', '性別' ], 
+					[ '男性', ] ,
+					[ '女性', ]
+					]);
+
+			var options = {
+				title : ''
+			};
+
+			var chart = new google.visualization.PieChart(document
+					.getElementById('registeredsexChart'));
+
+			chart.draw(data, options);
+		 	window.addEventListener("resize", function(){
+	        	chart.draw(data, options);
+	        });
+		}
+	</script>
+
+
+
+
+
+	<script>
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable();
+
+        var options = {
+          title: '人數',
+          curveType: 'function',
+     
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+	<script>
+    var chart = AmCharts.makeChart("chartdiv1", {
+        "type": "radar",
+        "theme": "light",
+        "dataProvider": [{
+            "country": "觀看次數(%)",
+            "litres": 21.50537634408602,
+            "units": 100.0
+        },  {
+            "country": "觀看影片數(%)",
+            "litres": 22.63157894736842,
+            "units": 0.0
+        }, {
+            "country": "討論區發文數(%)",
+            "litres": 0.6880733944954129,
+            "units": 100.0
+        }, {
+            "country": "問答題完成率(%)",
+            "litres":  8.791208791208788,
+            "units": 100.0
+        }, {
+            "country": "問答題答對率(%)",
+            "litres": 7.832422586520946,
+            "units": 0.0
+        }],
+        "valueAxes": [{
+            "axisTitleOffset": 20,
+            "minimum": 0,
+            "maximum": 100,
+            "axisAlpha": 0.15
+        }, {
+            "id": "v2",
+            "axisTitleOffset": 20,
+            "minimum": 0,
+            "axisAlpha": 0,
+            "inside": true
+        }],
+        "startDuration": 2,
+        "graphs": [{
+            "balloonText": "[[value]] %為所有學生平均值",
+            "bullet": "round",
+            "valueField": "litres",
+            "fillAlphas": 0.3,
+            "bulletSize" : 1,
+        }, {
+            "balloonText": "[[value]] %為本課程個人表現值",
+            "bullet": "square",
+            "valueField": "units",    
+            "fillAlphas": 0.3,
+            "bulletSize" : 1,
+            
+        }],
+        
+        
+        "categoryField": "country"
+    });
+    </script>
+
+	<script>
+var chart = AmCharts.makeChart( "chartdivdonut", {
+  "type": "pie",
+  "theme": "light",
+  "dataProvider": [ {
+    "title": "已完成",
+    "value": 0.0
+  }, {
+    "title": "未完成",
+    "value": 100.0
+  } ],
+  "titleField": "title",
+  "valueField": "value",
+  "labelRadius": 5,
+
+  "radius": "42%",
+  "innerRadius": "60%",
+  "labelText": "[[title]]",
+  "export": {
+    "enabled": false
+  }
+} );
+</script>
+	<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart_chart_durationWeek);
+		
+		function drawChart_chart_durationWeek() {
+			var data_recentWeekLogin1 = google.visualization.arrayToDataTable([
+			    ['week', '個人表現(%)'],
+			    ['觀看次數(%)', 100.0],
+			    ['觀看影片數(%)', 0.0],
+			    ['討論區發文數(%)', 100.0],
+			    ['問答題完成率(%)', 100.0],
+			    ['問答題答對率(%)', 0.0]
+			   
+			    
+		  	]);
+			var options = {
+				    hAxis: {titleTextStyle: {color: '#333'}},
+				    vAxis: {minValue: 0}
+				};
+		  	var chart = new google.visualization.AreaChart(document.getElementById('Div1'));
+		  	chart.draw(data_recentWeekLogin1, options);
+		  	window.addEventListener("resize", function(){
+				chart.draw(data_recentWeekLogin1, options);
+			});
+		}
+    </script>
+
+	<script>
+    var chart = AmCharts.makeChart("chartdiv2", {
+        "type": "radar",
+        "theme": "light",
+        "dataProvider": [{
+            "country": "註冊人數",
+            "litres":20,
+            "units":50
+        },  {
+            "country": "行動觀看人次",
+            "litres": 33,
+            "units": 44
+        }, {
+            "country": "測驗題數量",
+            "litres": 55,
+            "units": 66
+        }, {
+            "country": "影片觀看人數",
+            "litres":  77,
+            "units":88
+        }, {
+            "country": "課程影片數目",
+            "litres": 44,
+            "units": 11
+        }],
+        "valueAxes": [{
+            "axisTitleOffset": 20,
+            "minimum": 0,
+            "axisAlpha": 0.15
+        }, {
+            "id": "v2",
+            "axisTitleOffset": 20,
+            "minimum": 0,
+            "axisAlpha": 0,
+            "inside": true
+        }],
+        "startDuration": 2,
+        "graphs": [{
+            "balloonText": "[[value]] 為所有課程平均值",
+            "bullet": "round",
+            "valueField": "litres"
+        }, {
+            "balloonText": "[[value]] 為本課程表現值",
+            "bullet": "square",
+            "valueField": "units",
+            
+        }],
+        "categoryField": "country"
+    });
+    </script>
+
+
+
+	<script>
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable();
+
+        var options = {
+          title: '作答率',
+          curveType: 'function',
+          vAxis: {format: 'percent'},
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('answer_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+	<script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+      
+        var data = new google.visualization.DataTable();
+        
+        data.addColumn('string', '課程名稱');     
+        
+
+        
+        data.addRows([["尚無觀看影片"]]);
+        
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        
+        var cssClassNames = {
+                'headerRow': 'cssHeaderRow',
+                'tableRow': 'cssTableRow',
+                'oddTableRow': 'cssOddTableRow',
+                'selectedTableRow': 'cssSelectedTableRow',
+                'hoverTableRow': 'cssHoverTableRow',
+                'headerCell': 'cssHeaderCell',
+                'tableCell': 'cssTableCell',
+                'rowNumberCell': 'cssRowNumberCell'
+            };
+        
+        options = {
+        	    page: 'enable',
+        	      cssClassNames: cssClassNames,
+        	    showRowNumber: true,
+        	      width: '100%', 
+        		  height: '100%',
+        	    pageSize:30
+        	};
+        table.draw(data,options);
+      }
+    </script>
+
+
+	<!-- 若selectCourse內容經過改變，即傳送請求ChartDataServlet -->
+	<script>
+		function chgSelect()
+		{	
+			var select = document.getElementById("selectCourse").value;
+			form_showChart.action = "ChartDataServlet?mode=1&course="+select;
+			form_showChart.submit();
+		}
+	</script>
+
+	<script>
+    	$(document).ready(function(){
+    	    $(".nav-tabs a").click(function(){
+    	        $(this).tab('show');
+    	        
+    	    });
+    	});
+    </script>
+
+	<script>
+    	//alert("5555");
+    </script>
+
+</body></html>
